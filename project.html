@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Mood </title> 
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+background-color:"pink";
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+border:solid;
+background-color:blue;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body bgcolor="lightgreen">
+    <h1>How are you feeling?</h1>
+    <button onclick="happy()">😊 Happy</button>
+    <button onclick="sad()">😔 Sad</button>
+    <div id="message"></div>
+    <script>
+        function happy() {
+            document.body.style.backgroundColor = "teal";
+            document.getElementById("message").innerText = "Stay happy! Keep shining 🌟";
+        }
+        function sad() {
+            document.body.style.backgroundColor = "lightblue";
+            document.getElementById("message").innerText = "It's okay to feel sad. You are strong 💙";
+        }
+    </script>
+</body>
+</html>

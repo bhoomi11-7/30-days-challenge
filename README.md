@@ -5,3 +5,6 @@ https://github.com/bhoomi11-7/30-days-challenge/blob/main/project.html
 DAY 2: Revision of C language(Book:Let us C)till ch-5 and sloved their coding questions 
 
 DAY 3:Started making a small project in C
+
+DAY 4: Tried Number guessing  game using C
+https://github.com/bhoomi11-7/30-days-challenge/blob/main/project.html

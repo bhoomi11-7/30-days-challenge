@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+    int randomNumber, guess = 0; int attempts = 0;
+    int maxAttempts = 10; int score = 100;
+    srand(time(0));
+    randomNumber = (rand() % 50) + 1;   // 1–50 range
+    printf("=== Number Guessing Game ===\n");
+    printf("Guess a number between 1 and 50\n");
+    printf("You have %d attempts.\n", maxAttempts);
+    while (guess != randomNumber && attempts < maxAttempts)
+    {
+        printf("\nEnter your guess: ");
+        scanf("%d", &guess);
+        // Input validation
+        if (guess < 1 || guess > 50)
+        {
+            printf("Please enter a number between 1 and 50!\n");
+            continue;
+        }
+        attempts++;
+        if (guess > randomNumber) {
+            printf("Oops! Too high. Try smaller.\n");
+            score -= 10;
+        }
+        else if (guess < randomNumber)  {
+            printf("Not quite! Try bigger.\n");
+            score -= 10;
+        }
+        else  {
+            printf("🎉 Correct! Well done!\n");
+        }
+
+        printf("Remaining attempts: %d\n", maxAttempts - attempts);
+    }
+
+    if (score < 0)
+        score = 0;
+    if (guess == randomNumber)
+    {
+        printf("\nYou guessed it in %d attempts.\n", attempts);
+        printf("Final Score: %d\n", score);
+    }
+    else{
+        printf("\nGame Over! The correct number was %d\n", randomNumber);
+        printf("Better luck next time!\n");
+    }
+
+    return 0;
+}

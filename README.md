@@ -10,3 +10,5 @@ DAY 5: Tried Number guessing  game using C
 https://github.com/bhoomi11-7/30-days-challenge/blob/main/C%20mini%20project
 
 DAY 8:Revised all chapters of C (Book-Let us C)
+
+DAY 9:Tried about flexbox in css
